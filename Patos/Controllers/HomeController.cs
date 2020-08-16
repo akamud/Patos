@@ -21,13 +21,32 @@ namespace Patos.Controllers
 
         public IActionResult Index()
         {
-            var patos = new List<Pato>()
+            var patos = new List<Pato>
             {
-                new Pato("pato1.png")
+                new PatoBranco(),
+                new PatoReal(),
+                new PatoVermelho()
             };
 
             return View(patos);
         }
+
+        public IActionResult Completo()
+        {
+            var patos = new List<Pato>
+            {
+                new PatoBranco(),
+                new PatoReal(),
+                new PatoVermelho(),
+                new PatoPreto(),
+                new PatoCape(),
+                new PatoMarrom(),
+                new PatoB()
+            };
+
+            return View(patos);
+        }
+
 
         public IActionResult Privacy()
         {

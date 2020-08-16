@@ -8,5 +8,8 @@
         }
 
         public string Imagem { get; set; }
+
+        public virtual string Quack() => "Quack!";
+
     }
 }
