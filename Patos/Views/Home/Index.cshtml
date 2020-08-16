@@ -7,6 +7,15 @@
 <div style="height: 100%; width: 100%;">
     <div class="row d-flex align-items-center" style="background-color: cyan; height: 50%; padding: 30px;">
         <div class="container">
+            <div class="row">
+                @foreach (var pato in Model)
+                {
+                    if (pato.Voar())
+                    {
+                        <img class="pato" height="100" src="img/patos/@pato.Imagem"/>
+                    }
+                }
+            </div>
         </div>
     </div>
     <div class="row d-flex align-items-center" style="background-color: green; height: 50%; padding: 30px;">
