@@ -11,9 +11,10 @@
 
         public virtual string Quack() => "Quack!";
 
-        public bool Voar() => true;
         public void Nadar()
         {
         }
+        
+        public bool Voar() => true;
     }
 }
